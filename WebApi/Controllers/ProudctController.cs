@@ -1,6 +1,8 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using WebApi.Model;
 using WebApi.Services;
 using WebApi.ViewModel;
@@ -11,6 +13,14 @@ namespace WebApi.Controllers
     //[ApiController]
     public class ProudctController : ControllerBase
     {
+        
+        private readonly ILogger<ProudctController> _logger;
+
+        public ProudctController(ILogger<ProudctController> logger)
+        {
+            _logger = logger;
+        }
+
        [HttpGet]    
         public IActionResult GetProdcts()
         {
@@ -21,13 +31,29 @@ namespace WebApi.Controllers
         [Route("{id}",Name ="GetProduct")]
         public IActionResult GetProudct(int id)
         {
-            var Product = ProductService.Current.products.SingleOrDefault(x => x.Id == id);
-            if (Product==null)
+            try
             {
-                return NotFound();
-            }
+                //throw new Exception("来个异常");
+                var Product = ProductService.Current.products.SingleOrDefault(x => x.Id == id);
+                if (Product == null)
+                {
+                    _logger.LogInformation($"Id为{id}的产品没有找到");
+                    return NotFound();
+                }
 
-            return Ok(Product);
+                return Ok(Product);
+            }
+            catch (Exception ex)
+            {
+                //记录Exception就建议使用LogCritical了，
+                //这里需要注意的是Exception的发生就表示服务器发生了错误，
+                //我们应该处理这个exception并返回500。
+                //使用StatusCode这个方法返回特定的StatusCode，
+                //然后可以加一个参数来解释这个错误
+                _logger.LogCritical($"查找Id为{id}时发生错误！",ex);
+                return StatusCode(500, "处理请求时发生错误！");
+            }
+           
         }
 
         [HttpPost]
@@ -52,7 +78,7 @@ namespace WebApi.Controllers
                     ProductService.Current.products.Add(newProduct);
                     return CreatedAtRoute("GetProduct", new { id = newProduct.Id }, newProduct);
                 }
-
+                
                 return BadRequest(ModelState);
             }
 

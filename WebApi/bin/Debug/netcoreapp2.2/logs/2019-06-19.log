@@ -1,0 +1,9 @@
+2019-06-19 23:52:36.2350|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET https://localhost:5001/api/product  
+2019-06-19 23:52:36.4606|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-06-19 23:52:36.4970|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetProdcts", controller = "Proudct"}. Executing action WebApi.Controllers.ProudctController.GetProdcts (WebApi)
+2019-06-19 23:52:36.5136|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method WebApi.Controllers.ProudctController.GetProdcts (WebApi) - Validation state: Valid
+2019-06-19 23:52:36.5230|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method WebApi.Controllers.ProudctController.GetProdcts (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.8387ms.
+2019-06-19 23:52:36.5396|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebApi.Model.Products, WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-06-19 23:52:36.6184|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action WebApi.Controllers.ProudctController.GetProdcts (WebApi) in 113.9689ms
+2019-06-19 23:52:36.6184|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-06-19 23:52:36.6322|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 408.3932ms 200 application/json; charset=utf-8
