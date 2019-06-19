@@ -1,0 +1,6 @@
+D:\C#\WebApi\Data\bin\Debug\Data.dll
+D:\C#\WebApi\Data\bin\Debug\Data.pdb
+D:\C#\WebApi\Data\obj\Debug\Data.csprojAssemblyReference.cache
+D:\C#\WebApi\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+D:\C#\WebApi\Data\obj\Debug\Data.dll
+D:\C#\WebApi\Data\obj\Debug\Data.pdb
