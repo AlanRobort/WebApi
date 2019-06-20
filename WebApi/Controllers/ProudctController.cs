@@ -15,10 +15,14 @@ namespace WebApi.Controllers
     {
         
         private readonly ILogger<ProudctController> _logger;
+        //private readonly LocalMailService _localMailService;
+        private readonly IMailService _mailService;
 
-        public ProudctController(ILogger<ProudctController> logger)
+        public ProudctController(ILogger<ProudctController> logger,IMailService mailService)
         {
             _logger = logger;
+            //_localMailService = localMailService;
+            _mailService = mailService;
         }
 
        [HttpGet]    
@@ -168,6 +172,8 @@ namespace WebApi.Controllers
                 if (ModelState.IsValid)
                 {
                     var Deleteproduct = ProductService.Current.products.Remove(result);
+                    //_localMailService.send("Product Delete", $"Id为{id}的产品被删除了");
+                    _mailService.send("Product Delete", $"Id为{id}的产品被删除了");
                     return NoContent();
                 }
                 else

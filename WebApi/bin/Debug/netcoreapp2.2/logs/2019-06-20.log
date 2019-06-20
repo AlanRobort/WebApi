@@ -1,0 +1,155 @@
+2019-06-20 14:32:46.8293|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET https://localhost:5001/api/product  
+2019-06-20 14:32:46.9400|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-06-20 14:32:46.9745|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetProdcts", controller = "Proudct"}. Executing action WebApi.Controllers.ProudctController.GetProdcts (WebApi)
+2019-06-20 14:32:46.9900|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method WebApi.Controllers.ProudctController.GetProdcts (WebApi) - Validation state: Valid
+2019-06-20 14:32:46.9900|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method WebApi.Controllers.ProudctController.GetProdcts (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.1394ms.
+2019-06-20 14:32:47.0121|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebApi.Model.Products, WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-06-20 14:32:47.0853|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action WebApi.Controllers.ProudctController.GetProdcts (WebApi) in 104.747ms
+2019-06-20 14:32:47.0853|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-06-20 14:32:47.0979|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 276.9472ms 200 application/json; charset=utf-8
+2019-06-20 14:32:47.2023|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET https://localhost:5001/favicon.ico  
+2019-06-20 14:32:47.2077|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5.1454ms 404 text/plain
+2019-06-20 14:33:16.7102|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET https://localhost:5001/api/product/22 application/json 43
+2019-06-20 14:33:16.7102|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApi.Controllers.ProudctController.GetProudct (WebApi)'
+2019-06-20 14:33:16.7312|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetProudct", controller = "Proudct"}. Executing action WebApi.Controllers.ProudctController.GetProudct (WebApi)
+2019-06-20 14:33:16.7454|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method WebApi.Controllers.ProudctController.GetProudct (WebApi) with arguments (22) - Validation state: Valid
+2019-06-20 14:33:16.7508|INFO|WebApi.Controllers.ProudctController|Id为22的产品没有找到
+2019-06-20 14:33:16.7508|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method WebApi.Controllers.ProudctController.GetProudct (WebApi), returned result Microsoft.AspNetCore.Mvc.NotFoundResult in 5.4321ms.
+2019-06-20 14:33:16.7508|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404
+2019-06-20 14:33:16.7508|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action WebApi.Controllers.ProudctController.GetProudct (WebApi) in 28.6654ms
+2019-06-20 14:33:16.7669|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApi.Controllers.ProudctController.GetProudct (WebApi)'
+2019-06-20 14:33:16.7669|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 60.2586ms 404 text/plain
+2019-06-20 14:33:16.7669|INFO|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLNL94DN8A9T", Request id "0HLNL94DN8A9T:00000001": the application completed without reading the entire request body.
+2019-06-20 14:33:19.9175|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET https://localhost:5001/api/product/ application/json 43
+2019-06-20 14:33:19.9240|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-06-20 14:33:19.9240|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetProdcts", controller = "Proudct"}. Executing action WebApi.Controllers.ProudctController.GetProdcts (WebApi)
+2019-06-20 14:33:19.9240|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method WebApi.Controllers.ProudctController.GetProdcts (WebApi) - Validation state: Valid
+2019-06-20 14:33:19.9240|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method WebApi.Controllers.ProudctController.GetProdcts (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.0134ms.
+2019-06-20 14:33:19.9415|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebApi.Model.Products, WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-06-20 14:33:19.9415|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action WebApi.Controllers.ProudctController.GetProdcts (WebApi) in 14.7753ms
+2019-06-20 14:33:19.9415|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-06-20 14:33:19.9550|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 37.6209ms 200 application/json; charset=utf-8
+2019-06-20 14:33:19.9550|INFO|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLNL94DN8A9T", Request id "0HLNL94DN8A9T:00000002": the application completed without reading the entire request body.
+2019-06-20 14:33:38.0225|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DELETE https://localhost:5001/api/product/1 application/json 43
+2019-06-20 14:33:38.0225|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApi.Controllers.ProudctController.DeleteProduct (WebApi)'
+2019-06-20 14:33:38.0338|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "DeleteProduct", controller = "Proudct"}. Executing action WebApi.Controllers.ProudctController.DeleteProduct (WebApi)
+2019-06-20 14:33:38.0338|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method WebApi.Controllers.ProudctController.DeleteProduct (WebApi) with arguments (1) - Validation state: Valid
+2019-06-20 14:33:38.0338|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method WebApi.Controllers.ProudctController.DeleteProduct (WebApi), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 2.7612ms.
+2019-06-20 14:33:38.0474|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 204
+2019-06-20 14:33:38.0474|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action WebApi.Controllers.ProudctController.DeleteProduct (WebApi) in 13.706ms
+2019-06-20 14:33:38.0474|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApi.Controllers.ProudctController.DeleteProduct (WebApi)'
+2019-06-20 14:33:38.0474|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 37.0296ms 204 
+2019-06-20 14:33:38.0631|INFO|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLNL94DN8A9T", Request id "0HLNL94DN8A9T:00000003": the application completed without reading the entire request body.
+2019-06-20 14:33:49.8124|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET https://localhost:5001/api/product application/json 43
+2019-06-20 14:33:49.8156|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-06-20 14:33:49.8156|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetProdcts", controller = "Proudct"}. Executing action WebApi.Controllers.ProudctController.GetProdcts (WebApi)
+2019-06-20 14:33:49.8156|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method WebApi.Controllers.ProudctController.GetProdcts (WebApi) - Validation state: Valid
+2019-06-20 14:33:49.8156|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method WebApi.Controllers.ProudctController.GetProdcts (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.0082ms.
+2019-06-20 14:33:49.8310|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebApi.Model.Products, WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-06-20 14:33:49.8310|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action WebApi.Controllers.ProudctController.GetProdcts (WebApi) in 12.7381ms
+2019-06-20 14:33:49.8310|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-06-20 14:33:49.8310|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 28.5127ms 200 application/json; charset=utf-8
+2019-06-20 14:33:49.8442|INFO|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLNL94DN8A9T", Request id "0HLNL94DN8A9T:00000004": the application completed without reading the entire request body.
+2019-06-20 14:34:24.5340|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/2.0 GET https://localhost:44342/api/product  
+2019-06-20 14:34:24.6269|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-06-20 14:34:24.6495|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetProdcts", controller = "Proudct"}. Executing action WebApi.Controllers.ProudctController.GetProdcts (WebApi)
+2019-06-20 14:34:24.6635|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method WebApi.Controllers.ProudctController.GetProdcts (WebApi) - Validation state: Valid
+2019-06-20 14:34:24.6635|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method WebApi.Controllers.ProudctController.GetProdcts (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.2862ms.
+2019-06-20 14:34:24.6818|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebApi.Model.Products, WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-06-20 14:34:24.7541|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action WebApi.Controllers.ProudctController.GetProdcts (WebApi) in 97.801ms
+2019-06-20 14:34:24.7541|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-06-20 14:34:24.7541|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 237.2606ms 200 application/json; charset=utf-8
+2019-06-20 14:34:24.8813|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/2.0 GET https://localhost:44342/favicon.ico  
+2019-06-20 14:34:24.8813|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5.938ms 404 text/plain
+2019-06-20 14:34:58.3082|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET https://localhost:44342/api/product application/json 43
+2019-06-20 14:34:58.3140|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-06-20 14:34:58.3140|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetProdcts", controller = "Proudct"}. Executing action WebApi.Controllers.ProudctController.GetProdcts (WebApi)
+2019-06-20 14:34:58.3297|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method WebApi.Controllers.ProudctController.GetProdcts (WebApi) - Validation state: Valid
+2019-06-20 14:34:58.3297|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method WebApi.Controllers.ProudctController.GetProdcts (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.0287ms.
+2019-06-20 14:34:58.3453|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebApi.Model.Products, WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-06-20 14:34:58.3453|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action WebApi.Controllers.ProudctController.GetProdcts (WebApi) in 24.9504ms
+2019-06-20 14:34:58.3453|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-06-20 14:34:58.3453|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 50.2239ms 200 application/json; charset=utf-8
+2019-06-20 14:35:05.6324|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DELETE https://localhost:44342/api/product/1 application/json 43
+2019-06-20 14:35:05.6408|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApi.Controllers.ProudctController.DeleteProduct (WebApi)'
+2019-06-20 14:35:05.6636|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "DeleteProduct", controller = "Proudct"}. Executing action WebApi.Controllers.ProudctController.DeleteProduct (WebApi)
+2019-06-20 14:35:05.6848|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method WebApi.Controllers.ProudctController.DeleteProduct (WebApi) with arguments (1) - Validation state: Valid
+2019-06-20 14:35:05.6920|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method WebApi.Controllers.ProudctController.DeleteProduct (WebApi), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 3.0162ms.
+2019-06-20 14:35:05.6920|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 204
+2019-06-20 14:35:05.6920|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action WebApi.Controllers.ProudctController.DeleteProduct (WebApi) in 32.6258ms
+2019-06-20 14:35:05.7058|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApi.Controllers.ProudctController.DeleteProduct (WebApi)'
+2019-06-20 14:35:05.7058|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 79.8986ms 204 
+2019-06-20 14:46:35.3087|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/2.0 GET https://localhost:44342/api/product  
+2019-06-20 14:46:35.4059|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-06-20 14:46:35.4240|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetProdcts", controller = "Proudct"}. Executing action WebApi.Controllers.ProudctController.GetProdcts (WebApi)
+2019-06-20 14:46:35.4240|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method WebApi.Controllers.ProudctController.GetProdcts (WebApi) - Validation state: Valid
+2019-06-20 14:46:35.4430|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method WebApi.Controllers.ProudctController.GetProdcts (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.3058ms.
+2019-06-20 14:46:35.4430|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebApi.Model.Products, WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-06-20 14:46:35.5219|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action WebApi.Controllers.ProudctController.GetProdcts (WebApi) in 91.1237ms
+2019-06-20 14:46:35.5219|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-06-20 14:46:35.5326|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 230.6938ms 200 application/json; charset=utf-8
+2019-06-20 14:46:41.4267|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DELETE https://localhost:44342/api/product/1 application/json 43
+2019-06-20 14:46:41.4267|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApi.Controllers.ProudctController.DeleteProduct (WebApi)'
+2019-06-20 14:46:41.4440|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "DeleteProduct", controller = "Proudct"}. Executing action WebApi.Controllers.ProudctController.DeleteProduct (WebApi)
+2019-06-20 14:46:41.4595|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method WebApi.Controllers.ProudctController.DeleteProduct (WebApi) with arguments (1) - Validation state: Valid
+2019-06-20 14:46:41.4595|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method WebApi.Controllers.ProudctController.DeleteProduct (WebApi), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 2.5176ms.
+2019-06-20 14:46:41.4719|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 204
+2019-06-20 14:46:41.4719|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action WebApi.Controllers.ProudctController.DeleteProduct (WebApi) in 28.1448ms
+2019-06-20 14:46:41.4719|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApi.Controllers.ProudctController.DeleteProduct (WebApi)'
+2019-06-20 14:46:41.4863|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 59.2611ms 204 
+2019-06-20 14:48:01.7021|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/2.0 GET https://localhost:44342/api/product  
+2019-06-20 14:48:01.7956|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-06-20 14:48:01.8140|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetProdcts", controller = "Proudct"}. Executing action WebApi.Controllers.ProudctController.GetProdcts (WebApi)
+2019-06-20 14:48:01.8140|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method WebApi.Controllers.ProudctController.GetProdcts (WebApi) - Validation state: Valid
+2019-06-20 14:48:01.8353|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method WebApi.Controllers.ProudctController.GetProdcts (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.4808ms.
+2019-06-20 14:48:01.8451|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebApi.Model.Products, WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-06-20 14:48:01.9204|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action WebApi.Controllers.ProudctController.GetProdcts (WebApi) in 99.1895ms
+2019-06-20 14:48:01.9274|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-06-20 14:48:01.9274|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 237.54ms 200 application/json; charset=utf-8
+2019-06-20 14:48:06.1646|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DELETE https://localhost:44342/api/product/1 application/json 43
+2019-06-20 14:48:06.1646|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApi.Controllers.ProudctController.DeleteProduct (WebApi)'
+2019-06-20 14:48:06.1842|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "DeleteProduct", controller = "Proudct"}. Executing action WebApi.Controllers.ProudctController.DeleteProduct (WebApi)
+2019-06-20 14:48:06.2019|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method WebApi.Controllers.ProudctController.DeleteProduct (WebApi) with arguments (1) - Validation state: Valid
+2019-06-20 14:48:06.2087|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method WebApi.Controllers.ProudctController.DeleteProduct (WebApi), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 3.3099ms.
+2019-06-20 14:48:06.2087|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 204
+2019-06-20 14:48:06.2087|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action WebApi.Controllers.ProudctController.DeleteProduct (WebApi) in 30.0132ms
+2019-06-20 14:48:06.2220|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApi.Controllers.ProudctController.DeleteProduct (WebApi)'
+2019-06-20 14:48:06.2220|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 62.6692ms 204 
+2019-06-20 21:03:26.4008|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET https://localhost:5001/api/product  
+2019-06-20 21:03:26.5735|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-06-20 21:03:26.6088|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetProdcts", controller = "Proudct"}. Executing action WebApi.Controllers.ProudctController.GetProdcts (WebApi)
+2019-06-20 21:03:26.6308|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method WebApi.Controllers.ProudctController.GetProdcts (WebApi) - Validation state: Valid
+2019-06-20 21:03:26.6406|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method WebApi.Controllers.ProudctController.GetProdcts (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.9275ms.
+2019-06-20 21:03:26.6406|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebApi.Model.Products, WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-06-20 21:03:26.7290|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action WebApi.Controllers.ProudctController.GetProdcts (WebApi) in 111.7119ms
+2019-06-20 21:03:26.7290|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-06-20 21:03:26.7473|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 354.0793ms 200 application/json; charset=utf-8
+2019-06-20 21:03:26.8780|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET https://localhost:5001/favicon.ico  
+2019-06-20 21:03:26.8780|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4.473ms 404 text/plain
+2019-06-20 21:03:44.8467|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/2.0 GET https://localhost:44342/api/product  
+2019-06-20 21:03:44.9873|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-06-20 21:03:45.0201|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetProdcts", controller = "Proudct"}. Executing action WebApi.Controllers.ProudctController.GetProdcts (WebApi)
+2019-06-20 21:03:45.0404|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method WebApi.Controllers.ProudctController.GetProdcts (WebApi) - Validation state: Valid
+2019-06-20 21:03:45.0524|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method WebApi.Controllers.ProudctController.GetProdcts (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.9785ms.
+2019-06-20 21:03:45.0710|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebApi.Model.Products, WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-06-20 21:03:45.1818|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action WebApi.Controllers.ProudctController.GetProdcts (WebApi) in 153.1657ms
+2019-06-20 21:03:45.1880|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-06-20 21:03:45.1880|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 355.6264ms 200 application/json; charset=utf-8
+2019-06-20 21:09:06.6166|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/2.0 GET https://localhost:44342/api/product  
+2019-06-20 21:09:06.7207|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-06-20 21:09:06.7475|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetProdcts", controller = "Proudct"}. Executing action WebApi.Controllers.ProudctController.GetProdcts (WebApi)
+2019-06-20 21:09:06.7624|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method WebApi.Controllers.ProudctController.GetProdcts (WebApi) - Validation state: Valid
+2019-06-20 21:09:06.7727|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method WebApi.Controllers.ProudctController.GetProdcts (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.4396ms.
+2019-06-20 21:09:06.7865|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebApi.Model.Products, WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-06-20 21:09:06.9137|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action WebApi.Controllers.ProudctController.GetProdcts (WebApi) in 155.6041ms
+2019-06-20 21:09:06.9260|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-06-20 21:09:06.9414|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 326.8487ms 200 application/json; charset=utf-8
+2019-06-20 21:11:10.3170|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/2.0 GET https://localhost:44342/api/product  
+2019-06-20 21:11:10.7329|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-06-20 21:11:10.7557|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetProdcts", controller = "Proudct"}. Executing action WebApi.Controllers.ProudctController.GetProdcts (WebApi)
+2019-06-20 21:11:10.7711|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method WebApi.Controllers.ProudctController.GetProdcts (WebApi) - Validation state: Valid
+2019-06-20 21:11:10.7711|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method WebApi.Controllers.ProudctController.GetProdcts (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.6696ms.
+2019-06-20 21:11:10.7927|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebApi.Model.Products, WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-06-20 21:11:10.8703|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action WebApi.Controllers.ProudctController.GetProdcts (WebApi) in 108.5043ms
+2019-06-20 21:11:10.8763|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-06-20 21:11:10.8763|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 570.9367ms 200 application/json; charset=utf-8

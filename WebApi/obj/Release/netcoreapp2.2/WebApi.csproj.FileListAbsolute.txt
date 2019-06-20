@@ -1,0 +1,15 @@
+D:\C#\WebApi\WebApi\bin\Release\netcoreapp2.2\nlog.config
+D:\C#\WebApi\WebApi\bin\Release\netcoreapp2.2\WebApi.deps.json
+D:\C#\WebApi\WebApi\bin\Release\netcoreapp2.2\WebApi.runtimeconfig.json
+D:\C#\WebApi\WebApi\bin\Release\netcoreapp2.2\WebApi.runtimeconfig.dev.json
+D:\C#\WebApi\WebApi\bin\Release\netcoreapp2.2\WebApi.dll
+D:\C#\WebApi\WebApi\bin\Release\netcoreapp2.2\WebApi.pdb
+D:\C#\WebApi\WebApi\obj\Release\netcoreapp2.2\WebApi.csproj.CoreCompileInputs.cache
+D:\C#\WebApi\WebApi\obj\Release\netcoreapp2.2\WebApi.RazorAssemblyInfo.cache
+D:\C#\WebApi\WebApi\obj\Release\netcoreapp2.2\WebApi.RazorAssemblyInfo.cs
+D:\C#\WebApi\WebApi\obj\Release\netcoreapp2.2\WebApi.AssemblyInfoInputs.cache
+D:\C#\WebApi\WebApi\obj\Release\netcoreapp2.2\WebApi.AssemblyInfo.cs
+D:\C#\WebApi\WebApi\obj\Release\netcoreapp2.2\WebApi.RazorTargetAssemblyInfo.cache
+D:\C#\WebApi\WebApi\obj\Release\netcoreapp2.2\WebApi.dll
+D:\C#\WebApi\WebApi\obj\Release\netcoreapp2.2\WebApi.pdb
+D:\C#\WebApi\WebApi\obj\Release\netcoreapp2.2\WebApi.csprojAssemblyReference.cache
