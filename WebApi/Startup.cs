@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -17,6 +18,7 @@ namespace WebApi
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+
         }
 
         public  IConfiguration Configuration { get; }
@@ -29,7 +31,17 @@ namespace WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ProductContext>();
+            //services.AddDbContext<ProductContext>(
+            //    options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
+            //);
+
+            services.AddDbContext<ProductContext>(
+                options =>
+                {
+                    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")); 
+
+                }
+            );
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             //注册LocalMailService，每次请求（不是指HTTP request）都会创建一个实例
 #if DEBUG
@@ -37,6 +49,8 @@ namespace WebApi
 #else
             services.AddTransient<IMailService, CloudMailService>();
 #endif
+
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

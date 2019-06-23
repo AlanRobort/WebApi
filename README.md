@@ -29,6 +29,68 @@ Batabase First：先在数据库中建立表，然后生成C#Model
 EFCore使用的是DbContext和数据打交道，他代表着和数据库之间的一个session，用来查询和保存我们的Entities.
 创建后缀为DBContext的类，该项目中为Entities/ProductContext，用来访问数据库.
 需要在startup中注册该服务(services.AddDbContext<ProductContext>();)这样我们才能使用它
+数据库的连接在appsettings.json文件中
+在下方添加
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Warning"
+    }
+  },
+  //数据库连接
+    "ConnectionStrings": {
+      "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=Backstage;Trusted_Connection=True;MultipleActiveResultSets=true"
+    },
+  "AllowedHosts": "*"
+}
+
+必须在"ConnectionStrings"下定义数据库连接，其中"DefaultConnection"名字是可以随便定义，而"ConnectionStrings"是不可以，因为在startup文件中ConfigureServices方法里面 
+
+
+services.AddDbContext<ProductContext>(
+                options => { options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")); }
+            );
+这段代码是与数据库连接上下文的，UseSqlServer方法中Configuration.GetConnectonString，GetConnectonString
+摘要里写明了 Shorthand for GetSection("ConnectionStrings")[name].
+在查找appsettings.json文件中的数据库连接时，它会找ConnectionStrings下的[DefaultConnection]
+
+在Product类中有三个字段分别是Id,Name,Price
+在生成数据库之前必须要给这三个字段进行限制，比如Id设置为主键，Name长度限制，Price的精度限制。
+
+Product这个entity中的Id，根据约定（Id或者ProductId）会被视为映射表的主键，并且该主键是自增的。
+
+如果不使用Id或者ProductId这两个名字作为主键的话，我们可以通过两种方式把该属性设置成为主键：Data Annotation注解和Fluet Api。我学的是Fluet Api.FluetApi官方文档：https://docs.microsoft.com/en-us/ef/core/modeling/
+
+在项目中创建一个ProductConfiguration的类进行字段属性的限制。（代码自己看吧）
+
+然后在ProductContext类中将ProductConfiguration中写的配置移动过来
+
+protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new ProductConfiguration());
+        }
+
+然后在程序包管理器控制台中输入Add-Migration [定义迁移名(可以自己定义)] :
+
+Add-Migration ProductInfoInitalMigration
+
+生成成功后会多出一个Migrations的文件夹
+
+然后执行Update-database
+
+就会看到数据库ProductDb
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

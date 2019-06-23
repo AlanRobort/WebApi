@@ -11,5 +11,5 @@ D:\C#\WebApi\WebApi\bin\Debug\netcoreapp2.2\WebApi.pdb
 D:\C#\WebApi\WebApi\obj\Debug\netcoreapp2.2\WebApi.RazorTargetAssemblyInfo.cache
 D:\C#\WebApi\WebApi\obj\Debug\netcoreapp2.2\WebApi.dll
 D:\C#\WebApi\WebApi\obj\Debug\netcoreapp2.2\WebApi.pdb
-D:\C#\WebApi\WebApi\obj\Debug\netcoreapp2.2\WebApi.csprojAssemblyReference.cache
 D:\C#\WebApi\WebApi\bin\Debug\netcoreapp2.2\nlog.config
+D:\C#\WebApi\WebApi\obj\Debug\netcoreapp2.2\WebApi.csprojAssemblyReference.cache
