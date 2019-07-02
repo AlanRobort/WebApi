@@ -1,0 +1,177 @@
+2019-07-03 00:05:12.0511|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/2.0 GET https://localhost:44342/api/product  
+2019-07-03 00:05:12.1575|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-07-03 00:05:12.1788|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetProdcts", controller = "Proudct"}. Executing action WebApi.Controllers.ProudctController.GetProdcts (WebApi)
+2019-07-03 00:05:12.6414|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method WebApi.Controllers.ProudctController.GetProdcts (WebApi) - Validation state: Valid
+2019-07-03 00:05:12.8256|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.2.3-servicing-35854 initialized 'ProductContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-03 00:05:14.0549|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (176ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x].[Id], [x].[Description], [x].[Name], [x].[Price]
+FROM [Products] AS [x]
+ORDER BY [x].[Name]
+2019-07-03 00:05:14.1314|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'WebApi.Entities.ProductContext'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Description'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:ad0ac1b9-0493-49b9-8f94-17079582f806
+Error Number:207,State:1,Class:16
+2019-07-03 00:05:14.2637|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action WebApi.Controllers.ProudctController.GetProdcts (WebApi) in 2078.9842ms
+2019-07-03 00:05:14.2856|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-07-03 00:05:14.3509|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2019-07-03 00:05:14.4744|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2430.2417ms 500 text/html; charset=utf-8
+2019-07-03 00:05:15.4116|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/2.0 GET https://localhost:44342/favicon.ico  
+2019-07-03 00:05:15.4116|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4.3912ms 404 text/plain
+2019-07-03 00:05:27.7145|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DELETE https://localhost:44342/api/product application/json 43
+2019-07-03 00:05:27.7145|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '405 HTTP Method Not Supported'
+2019-07-03 00:05:27.7219|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '405 HTTP Method Not Supported'
+2019-07-03 00:05:27.7219|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 11.2075ms 405 text/plain
+2019-07-03 00:05:56.9701|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET https://localhost:44342/api/product application/json 43
+2019-07-03 00:05:56.9701|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-07-03 00:05:56.9847|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetProdcts", controller = "Proudct"}. Executing action WebApi.Controllers.ProudctController.GetProdcts (WebApi)
+2019-07-03 00:05:57.0072|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method WebApi.Controllers.ProudctController.GetProdcts (WebApi) - Validation state: Valid
+2019-07-03 00:05:57.0072|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.2.3-servicing-35854 initialized 'ProductContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-03 00:05:57.1161|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (95ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x].[Id], [x].[Description], [x].[Name], [x].[Price]
+FROM [Products] AS [x]
+ORDER BY [x].[Name]
+2019-07-03 00:05:57.1722|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'WebApi.Entities.ProductContext'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Description'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:ad0ac1b9-0493-49b9-8f94-17079582f806
+Error Number:207,State:1,Class:16
+2019-07-03 00:05:57.2922|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action WebApi.Controllers.ProudctController.GetProdcts (WebApi) in 304.1766ms
+2019-07-03 00:05:57.3097|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-07-03 00:05:57.3559|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2019-07-03 00:05:57.3981|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 427.7842ms 500 text/html; charset=utf-8
+2019-07-03 00:07:41.3503|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET https://localhost:5001/api/product  
+2019-07-03 00:07:41.4813|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-07-03 00:07:41.5163|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetProdcts", controller = "Proudct"}. Executing action WebApi.Controllers.ProudctController.GetProdcts (WebApi)
+2019-07-03 00:07:41.7351|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method WebApi.Controllers.ProudctController.GetProdcts (WebApi) - Validation state: Valid
+2019-07-03 00:07:41.9116|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.2.3-servicing-35854 initialized 'ProductContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-03 00:07:42.3139|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (180ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x].[Id], [x].[Description], [x].[Name], [x].[Price]
+FROM [Products] AS [x]
+ORDER BY [x].[Name]
+2019-07-03 00:07:42.3939|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'WebApi.Entities.ProductContext'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Description'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:e9d8c2c6-fe87-4812-978d-dbb24d1c0207
+Error Number:207,State:1,Class:16
+2019-07-03 00:07:42.5873|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action WebApi.Controllers.ProudctController.GetProdcts (WebApi) in 1064.7866ms
+2019-07-03 00:07:42.6179|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-07-03 00:07:42.7116|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2019-07-03 00:07:42.8279|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1488.3859ms 500 text/html; charset=utf-8
+2019-07-03 00:07:43.0163|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET https://localhost:5001/favicon.ico  
+2019-07-03 00:07:43.0163|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3.664ms 404 text/plain
+2019-07-03 00:14:36.9663|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET https://localhost:5001/api/product  
+2019-07-03 00:14:37.0833|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-07-03 00:14:37.1211|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetProdcts", controller = "Proudct"}. Executing action WebApi.Controllers.ProudctController.GetProdcts (WebApi)
+2019-07-03 00:14:37.3166|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method WebApi.Controllers.ProudctController.GetProdcts (WebApi) - Validation state: Valid
+2019-07-03 00:14:37.4838|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.2.3-servicing-35854 initialized 'ProductContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-03 00:14:37.6730|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x].[Id], [x].[Description], [x].[Name], [x].[Price]
+FROM [Products] AS [x]
+ORDER BY [x].[Name]
+2019-07-03 00:14:37.6891|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method WebApi.Controllers.ProudctController.GetProdcts (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 367.0825ms.
+2019-07-03 00:14:37.6891|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebApi.Entities.ProductWithoutMaterial, WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-03 00:14:37.7831|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action WebApi.Controllers.ProudctController.GetProdcts (WebApi) in 656.0532ms
+2019-07-03 00:14:37.7831|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-07-03 00:14:37.7989|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 844.1279ms 200 application/json; charset=utf-8
+2019-07-03 00:15:07.8565|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET https://localhost:5001/api/product application/json 43
+2019-07-03 00:15:07.8565|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-07-03 00:15:07.8630|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetProdcts", controller = "Proudct"}. Executing action WebApi.Controllers.ProudctController.GetProdcts (WebApi)
+2019-07-03 00:15:07.8630|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method WebApi.Controllers.ProudctController.GetProdcts (WebApi) - Validation state: Valid
+2019-07-03 00:15:07.8630|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.2.3-servicing-35854 initialized 'ProductContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-03 00:15:07.8764|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x].[Id], [x].[Description], [x].[Name], [x].[Price]
+FROM [Products] AS [x]
+ORDER BY [x].[Name]
+2019-07-03 00:15:07.8764|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method WebApi.Controllers.ProudctController.GetProdcts (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10.1634ms.
+2019-07-03 00:15:07.8764|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebApi.Entities.ProductWithoutMaterial, WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-03 00:15:07.8764|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action WebApi.Controllers.ProudctController.GetProdcts (WebApi) in 21.3067ms
+2019-07-03 00:15:07.8917|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-07-03 00:15:07.8917|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 38.9974ms 200 application/json; charset=utf-8
+2019-07-03 00:15:07.9084|INFO|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLNV11G8104H", Request id "0HLNV11G8104H:00000001": the application completed without reading the entire request body.
+2019-07-03 00:16:33.7210|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET https://localhost:5001/api/product  
+2019-07-03 00:16:33.8465|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-07-03 00:16:33.8793|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetProdcts", controller = "Proudct"}. Executing action WebApi.Controllers.ProudctController.GetProdcts (WebApi)
+2019-07-03 00:16:34.1628|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method WebApi.Controllers.ProudctController.GetProdcts (WebApi) - Validation state: Valid
+2019-07-03 00:17:33.6296|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET https://localhost:5001/api/product application/json 43
+2019-07-03 00:17:33.6296|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-07-03 00:17:33.6296|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetProdcts", controller = "Proudct"}. Executing action WebApi.Controllers.ProudctController.GetProdcts (WebApi)
+2019-07-03 00:17:33.6429|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method WebApi.Controllers.ProudctController.GetProdcts (WebApi) - Validation state: Valid
+2019-07-03 00:17:37.1840|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.2.3-servicing-35854 initialized 'ProductContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-03 00:17:37.1840|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.2.3-servicing-35854 initialized 'ProductContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-03 00:17:37.4021|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x].[Id], [x].[Description], [x].[Name], [x].[Price]
+FROM [Products] AS [x]
+ORDER BY [x].[Name]
+2019-07-03 00:17:37.4021|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x].[Id], [x].[Description], [x].[Name], [x].[Price]
+FROM [Products] AS [x]
+ORDER BY [x].[Name]
+2019-07-03 00:26:31.3112|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET https://localhost:5001/api/product  
+2019-07-03 00:26:31.4186|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-07-03 00:26:31.4511|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetProdcts", controller = "Proudct"}. Executing action WebApi.Controllers.ProudctController.GetProdcts (WebApi)
+2019-07-03 00:26:31.6860|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method WebApi.Controllers.ProudctController.GetProdcts (WebApi) - Validation state: Valid
+2019-07-03 00:26:39.3561|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.2.3-servicing-35854 initialized 'ProductContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-03 00:26:39.5304|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x].[Id], [x].[Description], [x].[Name], [x].[Price]
+FROM [Products] AS [x]
+ORDER BY [x].[Name]
+2019-07-03 00:26:45.4077|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method WebApi.Controllers.ProudctController.GetProdcts (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 13716.2779ms.
+2019-07-03 00:26:45.5664|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebApi.Entities.ProductWithoutMaterial, WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-03 00:26:45.7438|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action WebApi.Controllers.ProudctController.GetProdcts (WebApi) in 14282.3944ms
+2019-07-03 00:26:45.7835|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApi.Controllers.ProudctController.GetProdcts (WebApi)'
+2019-07-03 00:26:45.9304|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 14627.3287ms 200 application/json; charset=utf-8

@@ -81,6 +81,9 @@ Add-Migration ProductInfoInitalMigration
 就会看到数据库ProductDb
 
 
+#EF CURD
+
+
 
 
 

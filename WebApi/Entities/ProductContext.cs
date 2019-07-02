@@ -20,10 +20,11 @@ namespace WebApi.Entities
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new ProductConfiguration());
+            modelBuilder.ApplyConfiguration(new MaterialConfiguration());
         }
 
         public DbSet<Product> Products { get; set; }
-
+        public DbSet<Material> Materials { get; set;}
 
         //其中的参数optionsBuilder提供了一个UseSqlServer()这个方法，
         //它告诉Dbcontext将会被用来连接Sql Server数据库，

@@ -1,9 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using WebApi.Entities;
 using WebApi.Model;
+using WebApi.Repositories;
 using WebApi.Services;
 using WebApi.ViewModel;
 
@@ -17,19 +20,38 @@ namespace WebApi.Controllers
         private readonly ILogger<ProudctController> _logger;
         //private readonly LocalMailService _localMailService;
         private readonly IMailService _mailService;
+        private readonly IProductRepository _productRepository;
 
-        public ProudctController(ILogger<ProudctController> logger,IMailService mailService)
+        public ProudctController(ILogger<ProudctController> logger,IMailService mailService,IProductRepository productRepository)
         {
             _logger = logger;
             //_localMailService = localMailService;
             _mailService = mailService;
+            _productRepository = productRepository;
         }
 
        [HttpGet]    
         public IActionResult GetProdcts()
         {
             var ProductsList = ProductService.Current.products;
-            return Ok(ProductsList);
+            //return Ok(ProductsList);
+            var Products = _productRepository.GetProducts();
+            //这边要注意，其中的Product类型是DbContext和repository操作的类型，
+            //而不是Action应该返回的类型，而且我们的查询结果是不带Material的，
+            //所以需要把Product的list映射成ProductWithoutMaterialDto的list。
+            var results = new List<ProductWithoutMaterial>();
+            foreach (var product in Products)
+            {
+                results.Add(new ProductWithoutMaterial
+                {
+                    Id = product.Id,
+                    Name = product.Name,
+                    Price = product.Price,
+                    Description = product.Description
+                });
+            }
+
+            return Ok(results);
         }
 
         [Route("{id}",Name ="GetProduct")]

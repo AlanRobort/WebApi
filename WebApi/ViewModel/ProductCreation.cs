@@ -16,7 +16,7 @@ namespace WebApi.ViewModel
         [Display(Name="产品价格")]
         [Required(ErrorMessage ="{0}是必填项")]
         [Range(0,Double.MaxValue,ErrorMessage ="{0}必须大于{1}")]
-        public float Price { get; set; }
+        public decimal Price { get; set; }
 
         [Display(Name="描述")]
         [MaxLength(100,ErrorMessage ="{0}的长度不能超过{1}个字符")]

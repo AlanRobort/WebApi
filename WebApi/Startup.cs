@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using NLog.Extensions.Logging;
 using WebApi.Entities;
+using WebApi.Repositories;
 using WebApi.Services;
 
 namespace WebApi
@@ -49,8 +50,8 @@ namespace WebApi
 #else
             services.AddTransient<IMailService, CloudMailService>();
 #endif
+            services.AddScoped<IProductRepository, ProductRepository>();
 
-            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
